@@ -1,5 +1,4 @@
-node {
-	properties(
+properties(
 		[parameters(
 			[choice(choices: 
 			[
@@ -21,7 +20,12 @@ node {
 			'eu-central-1'], 
 		description: 'Where would you like to build? ', 
 		name: 'REGION')])])
-		
+        
+
+
+
+        
+node {	
 	stage("Checkout SCM"){
 		timestamps {
 			ws {
